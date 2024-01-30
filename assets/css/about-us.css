@@ -1,0 +1,210 @@
+:root {
+    --color-blue: #83af9b;
+    --color-green: #c8c8a9;
+    --color-brown: #774f38;
+    --color-beige: #ece5ce;
+    --color-yellow: #f9cdad;
+    --color-pink: #fe4365;
+    --color-orange: #FF4900;
+    --color-darker-orange: #D13200;
+    --color-white: #fff;
+    
+  }
+  
+  *
+  {
+      font-family: 'Poppins', sans-serif;
+  }
+
+body {
+    background-color: #131720;
+}
+
+main {
+    padding: 100px;
+}
+
+.inner-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.col-1 {
+    width: 50%;
+}
+
+/* Speech Bubble Style */
+.speech-bubble {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.speech-bubble p {
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 15px;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    padding: 50px;
+    border-radius: 11px;
+    position: relative;
+    box-shadow: 10px 10px var(--color-white);
+  }
+  
+.speech-bubble p:after {
+    transform: translateY(0px);
+    animation: float2 6s ease-in-out infinite;
+    content: ".";
+    font-weight: bold;
+    -webkit-text-fill-color: var(--color-orange);
+    text-shadow: 22px 22px var(--color-white);
+    text-align: left;
+    font-size: 55px;
+    width: 55px;
+    height: 11px;
+    line-height: 30px;
+    border-radius: 11px;
+    background-color: var(--color-orange);
+    position: absolute;
+    display: block;
+    bottom: -30px;
+    left: 0;
+    box-shadow: 10px 10px var(--color-white);
+    z-index: -2;
+}
+  
+@keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+@keyframes float2 {
+    0% {
+      line-height: 30px;
+      transform: translateY(0px);
+    }
+    55% {
+      transform: translateY(-20px);
+    }
+    60% {
+      line-height: 10px;
+    }
+    100% {
+      line-height: 30px;
+      transform: translateY(0px);
+    }
+  }
+
+.col-1 h1{
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--color-white);
+}
+
+.col-1 p{
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--color-white);
+}
+
+.inner-section__button {
+    gap: 20px;
+    display: flex;
+}
+
+/* General Styles First Container*/
+
+.button {
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    width: 25%;
+    background-color: var(--color-orange);
+    border: 2px solid var(--color-orange);
+    font-size: 22px;
+    font-weight: 400;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--color-white);
+    transition: border 0.2s ease-in-out, 
+                color 0.2s ease-in-out,
+                box-shadow 0.2s ease-in-out;
+    position: relative;
+    box-shadow: inset 0 0 #131720;
+}
+
+.button:hover {
+    border-color: transparent;
+    box-shadow: inset 0 150px #131720;
+}
+
+.button--border {
+    background-color: transparent;
+    border-color: var(--color-white);
+    color: var(--color-white);
+    transition: border 0.2s ease-in-out, 
+                color 0.2s ease-in-out,
+                box-shadow 0.2s ease-in-out;
+    position: relative;
+    box-shadow: inset 0 0 #131720;
+}
+
+.button--border:hover {
+    border-color: transparent;
+    box-shadow: inset 0 150px var(--color-orange);
+}
+
+
+/* Anchor Section */
+.scroll-down__button{
+    position: absolute;
+    right: 5;
+    right: 50%;
+    bottom: 10%;
+}
+
+.scroll-down__button a {
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 50px;
+    transition: border 0.2s ease-in-out, 
+                color 0.2s ease-in-out,
+                box-shadow 0.2s ease-in-out;    
+    position: relative;
+    box-shadow: inset 0 0 #131720;
+    background-color: var(--color-orange);
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.scroll-down__button a:hover {
+    padding: 10px;
+    border-color: transparent;
+    box-shadow: inset 0 150px #131720;
+}
+
+
+/* Column 2 */
+.col-2 {
+    width: 50%;
+}
+.col-2 img {
+    width: 90%;
+    object-fit: contain;
+    margin-left: auto;
+    display: block;
+}
