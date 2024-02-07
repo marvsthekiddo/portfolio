@@ -43,39 +43,39 @@ main {
 
 .speech-bubble p {
     transform: translateY(0px);
-    animation: float 6s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 3px;
     font-size: 15px;
     color: var(--color-white);
     background-color: var(--color-orange);
-    padding: 50px;
+    padding: 20px;
     border-radius: 11px;
     position: relative;
-    box-shadow: 10px 10px var(--color-white);
+    box-shadow: 5px 5px var(--color-white);
   }
   
 .speech-bubble p:after {
     transform: translateY(0px);
-    animation: float2 6s ease-in-out infinite;
+    animation: float2 3s ease-in-out infinite;
     content: ".";
-    font-weight: bold;
+    font-weight: 400;
     -webkit-text-fill-color: var(--color-orange);
-    text-shadow: 22px 22px var(--color-white);
+    text-shadow: 5px 5px var(--color-white);
     text-align: left;
     font-size: 55px;
-    width: 55px;
+    width: 40px;
     height: 11px;
     line-height: 30px;
     border-radius: 11px;
     background-color: var(--color-orange);
     position: absolute;
     display: block;
-    bottom: -30px;
+    bottom: -35px;
     left: 0;
-    box-shadow: 10px 10px var(--color-white);
+    box-shadow: 5px 5px var(--color-white);
     z-index: -2;
 }
   
@@ -97,10 +97,10 @@ main {
       transform: translateY(0px);
     }
     55% {
-      transform: translateY(-20px);
+      transform: translateY(-15px);
     }
     60% {
-      line-height: 10px;
+      line-height: 20px;
     }
     100% {
       line-height: 30px;
