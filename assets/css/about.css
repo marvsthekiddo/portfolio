@@ -30,7 +30,6 @@ body {
 /* Style for inner sections */
 .inner-section {
     display: flex;
-    padding: 80px;
     justify-content: center;
     width: 100%;
 }
@@ -40,6 +39,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 80px;
     width: 1450px; /* Fixed width container */
 }
 
@@ -234,6 +234,11 @@ body {
     object-fit: contain;
     margin-left: auto;
     display: block;
+    filter: grayscale(100%);
+}
+
+.own-picture:hover {
+    filter: none;
 }
 
 /*Second Section*/
@@ -245,6 +250,10 @@ body {
   display: block;
   filter: grayscale(100%);
   border-radius: 20px;
+}
+
+.about-me:hover {
+    filter: none;
 }
 
 
@@ -327,7 +336,6 @@ body {
     }
 }
 
-/* Keyframes for progress percentage animation */
 @keyframes percentageAnimation {
     from {
         opacity: 0;
