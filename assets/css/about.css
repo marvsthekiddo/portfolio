@@ -9,7 +9,6 @@
     --color-orange: #FF4900;
     --color-darker-orange: #D13200;
     --color-white: #fff;
-
     /* Progress Bar Color according to the percentage */
     --color-low: #FF7004; /* Color for low progress */
     --color-medium: #FF4900; /* Color for medium progress */
@@ -45,10 +44,22 @@ body {
 }
 
 /* Column 1 width */
+.column-1_minimize-width{
+    width: 40%;
+}
+
 .column-1 {
     width: 50%;
 }
 
+/* Column 2 styles */
+.column-2 {
+    width: 50%;
+}
+
+.column-2_maximize-width {
+    width: 60%;
+}
 /* Speech Bubble Styles */
 .speech-bubble {
     width: 30%;
@@ -190,31 +201,31 @@ body {
 .scroll-down__button {
     position: absolute;
     right: 50%; /* Center horizontally */
-    bottom: 10%;
+    bottom: 25%;
 }
 
-.scroll-down__button a {
-    padding: 10px;
+.scroll-down__button img {
+    padding: 30px 15px;
     border-radius: 50px;
-    font-size: 50px;
-    transition: border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 1px solid var(--color-orange);
+    transition: border 0.2s ease-in-out, 
+                color 0.2s ease-in-out, 
+                box-shadow 0.2s ease-in-out;
     position: relative;
     box-shadow: inset 0 0 #131720;
-    background-color: var(--color-orange);
-    text-decoration: none;
-    color: var(--color-white);
+    background-color: transparent;
 }
 
 /* Hover effect for scroll down button */
-.scroll-down__button a:hover {
-    padding: 10px;
-    border-color: transparent;
-    box-shadow: inset 0 150px #131720;
+.scroll-down__button img:hover {
+    padding: 30px 15px;
+    box-shadow: inset 0 150px var(--color-orange);
+    border: transparent;
 }
 
-/* Column 2 styles */
-.column-2 {
-    width: 50%;
+.scroll-down__arrow-long:hover {
+    fill: white;
+    z-index: 5;
 }
 
 /* Column 2 image styles */
@@ -249,6 +260,7 @@ body {
     line-height: 55px;
     font-weight: medium;
     color: var(--color-white);
+    margin-bottom: 30px;
 }
 
 .progress-container p {
@@ -256,6 +268,7 @@ body {
     font-size: 18px;
     font-weight: light;
     line-height: 35px;
+    margin-bottom: 30px;
 }
 
 /* Progress bar styles */
@@ -265,6 +278,7 @@ body {
     margin-bottom: 5px;
     position: relative;
     overflow: hidden;
+    margin: 30px 0;
 }
 
 .progress-bar-inner {
