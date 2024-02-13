@@ -219,7 +219,7 @@ body {
 
 /* Column 2 image styles */
 .own-picture {
-    width: 90%;
+    width: 100%;
     object-fit: contain;
     margin-left: auto;
     display: block;
@@ -228,10 +228,12 @@ body {
 /*Second Section*/
 
 .about-me {
-  width: 70%;
+  width: 80%;
   object-fit: contain;
   margin-right: auto;
   display: block;
+  filter: grayscale(100%);
+  border-radius: 20px;
 }
 
 
