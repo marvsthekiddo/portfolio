@@ -256,6 +256,27 @@ body {
     filter: none;
 }
 
+.year-experience {
+    display: block;
+    width: 10%;
+    background-image: url('images/about-us essentials/number of year experience.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 100px;
+}
+
+.year-experience p {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 39px;
+    width: 30%;
+    color: var(--color-whit);
+}
 
 /* Progress container styles */
 .progress-container {
