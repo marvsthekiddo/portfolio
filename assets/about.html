@@ -10,9 +10,6 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Global Header Component -->
-    <global-header></global-header>
-    
     <!-- Main Content Section -->
     <main>
         <!-- First Inner Section -->
@@ -30,25 +27,27 @@
                     <p>A Professional WordPress Developer</p>
                     <!-- Buttons -->
                     <div class="inner-section__button">
-                        <a href="#" class="button" onmouseover="hoverH1()">Download CV</a>
-                        <a href="#" class="button button--border" onmouseover="hoverH1()">My Work</a>
+                        <a href="#" class="button" onmouseover="hoverH1()" onmouseout="resetH1()">Download CV</a>
+                        <a href="#" class="button button--border" onmouseover="hoverH1()" onmouseout="resetH1()">My Work</a>
                     </div>
                     <!-- Scroll Down Button -->
                     <div class="scroll-down__button">
-                        <img src="images/about-us essentials/arrow-long.svg" class="scroll-down__arrow-long">
-                    </div>
+                        <a href="#second-inner-section">
+                            <img src="images/about-us essentials/arrow-long.svg" class="scroll-down__arrow-long">
+                        </a>
+                    </div>                    
                 </div>
                 <!-- Column 2 -->
                 <div class="column-2_maximize-width">
                     <!-- Image -->
-                    <img class="own-picture" src="images/about-us essentials/Group 34859.png">
+                    <img class="own-picture" src="images/about-us essentials/banner-image.png">
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Second Inner Section -->
-    <section class="inner-section">
+    <section class="inner-section" id="second-inner-section">
         <div class="container">
             <!-- Column 1 -->
             <div class="column-1">
@@ -90,6 +89,10 @@
                         <div class="progress-bar">
                             <div class="progress-bar-inner" style="--percentage: 90;" data-color="very-high"></div>
                         </div>
+                    </div>
+                    <div class="inner-section__button">
+                        <a href="#" class="button">Hire Me</a>
+                        <a href="#" class="button button--border">About Me</a>
                     </div>
                 </div>
             </div>
