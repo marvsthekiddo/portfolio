@@ -271,6 +271,7 @@ body {
     bottom: 5%;
 }
 
+/* COMING */
 .scroll-down__button:hover + .own-picture {
     transform: translateY(-10px); /* Move the image up slightly */
 }
@@ -304,12 +305,12 @@ body {
     display: block;
     filter: grayscale(100%);
     border-radius: 20px;
-    transition: transform 0.5s ease; /* Added transition property for transform */
+    transition: transform 0.5s ease; 
 }
 
 .about-me:hover {
     filter: none;
-    transform: translateY(-10px); /* Move the image up slightly */
+    transform: translateY(-10px); 
 }
 
 
