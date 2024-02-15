@@ -62,7 +62,7 @@ body {
 }
 /* Speech Bubble Styles */
 .speech-bubble {
-    width: 30%;
+    width: 40%;
     margin-bottom: 50px;
 }
 
@@ -137,7 +137,7 @@ body {
 }
 
 /* Column 1 header styles */
-.column-1 h1 {
+.column-1_minimize-width h1 {
     font-size: 80px;
     font-weight: bold;
     margin: 0;
@@ -145,7 +145,7 @@ body {
 }
 
 /* Column 1 paragraph styles */
-.column-1 p {
+.column-1_minimize-width p {
     font-size: 22px;
     font-weight: 300;
     color: var(--color-white);
@@ -201,7 +201,7 @@ body {
 .scroll-down__button {
     position: absolute;
     right: 50%; /* Center horizontally */
-    bottom: 25%;
+    bottom: 20%;
 }
 
 .scroll-down__button img {
@@ -230,7 +230,7 @@ body {
 
 /* Column 2 image styles */
 .own-picture {
-    width: 100%;
+    width: 90%;
     object-fit: contain;
     margin-left: auto;
     display: block;
@@ -259,23 +259,26 @@ body {
 .year-experience {
     display: block;
     width: 10%;
-    background-image: url('images/about-us essentials/number of year experience.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: red;
-    padding: 20px;
+    background-color: #111111;
+    padding: 20px 30px;
     border-radius: 20px;
+    border-top: 31px dashed var(--color-white);
     position: absolute;
-    left: 100px;
+    left: 9%;
+    margin-top: -165px;
+    overflow: hidden;
 }
 
 .year-experience p {
     font-size: 30px;
     font-weight: bold;
     line-height: 39px;
-    width: 30%;
-    color: var(--color-whit);
+    width: 100%;
+    color: var(--color-white);
+}
+
+.year-experience span {
+    font-size: 50px;
 }
 
 /* Progress container styles */
