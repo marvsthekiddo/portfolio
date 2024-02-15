@@ -8,7 +8,8 @@
     --color-pink: #fe4365;
     --color-orange: #FF4900;
     --color-darker-orange: #D13200;
-    --color-white: #fff;
+    --color-white: #ffffff;
+    --color-navy-blue: #131720;
     /* Progress Bar Color according to the percentage */
     --color-low: #FF7004; /* Color for low progress */
     --color-medium: #FF4900; /* Color for medium progress */
@@ -24,7 +25,7 @@
 
 /* Body styles */
 body {
-    background-color: #131720; /* Dark background color */
+    background-color: var(--color-navy-blue); /* Dark background color */
 }
 
 /* Style for inner sections */
@@ -142,7 +143,30 @@ body {
     font-weight: bold;
     margin: 0;
     color: var(--color-white);
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
+
+.hover-stroke:hover{
+    color: var(--color-navy-blue);
+}
+
+.hover-stroke::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    text-shadow: 0px -1px 0 var(--color-white),
+                0px 1px 0 var(--color-white),
+                -1px 0px 0 var(--color-white),
+                1px 0px 0 var(--color-white)
+}
+
+.hover-effect:hover {
+    color: var(--color-navy-blue);
+}
+
 
 /* Column 1 paragraph styles */
 .column-1_minimize-width p {
@@ -162,7 +186,7 @@ body {
     display: inline-block;
     text-align: center;
     padding: 15px;
-    width: 25%;
+    width: 35%;
     background-color: var(--color-orange); /* Button background color */
     border: 2px solid var(--color-orange); /* Button border */
     font-size: 22px;
@@ -172,13 +196,13 @@ body {
     color: var(--color-white); /* Button text color */
     transition: border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     position: relative;
-    box-shadow: inset 0 0 #131720; /* Button shadow */
+    box-shadow: inset 0 0 var(--color-navy-blue); /* Button shadow */
 }
 
 /* Hover effect for buttons */
 .button:hover {
     border-color: transparent;
-    box-shadow: inset 0 150px #131720;
+    box-shadow: inset 0 150px var(--color-navy-blue);
 }
 
 /* Border button styles */
@@ -188,7 +212,7 @@ body {
     color: var(--color-white);
     transition: border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     position: relative;
-    box-shadow: inset 0 0 #131720;
+    box-shadow: inset 0 0 var(--color-navy-blue);
 }
 
 /* Hover effect for border buttons */
@@ -212,7 +236,7 @@ body {
                 color 0.2s ease-in-out, 
                 box-shadow 0.2s ease-in-out;
     position: relative;
-    box-shadow: inset 0 0 #131720;
+    box-shadow: inset 0 0 var(--color-navy-blue);
     background-color: transparent;
 }
 
@@ -244,25 +268,26 @@ body {
 /*Second Section*/
 
 .about-me {
-  width: 80%;
-  object-fit: contain;
-  margin-right: auto;
-  display: block;
-  filter: grayscale(100%);
-  border-radius: 20px;
+    width: 80%;
+    object-fit: contain;
+    margin-right: auto;
+    display: block;
+    filter: grayscale(100%);
+    border-radius: 20px;
+    transition: transform 0.5s ease; /* Added transition property for transform */
 }
 
 .about-me:hover {
     filter: none;
+    transform: translateY(-10px); /* Move the image up slightly */
 }
+
 
 .year-experience {
     display: block;
-    width: 10%;
+    width: 13%;
     background-color: #111111;
-    padding: 20px 30px;
     border-radius: 20px;
-    border-top: 31px dashed var(--color-white);
     position: absolute;
     left: 9%;
     margin-top: -165px;
@@ -270,11 +295,15 @@ body {
 }
 
 .year-experience p {
+    display: inline-block;
     font-size: 30px;
     font-weight: bold;
     line-height: 39px;
-    width: 100%;
+    width: 72%;
     color: var(--color-white);
+    border-top: 26px dashed var(--color-white);
+    margin: 0px 10px;
+    padding: 30px;
 }
 
 .year-experience span {
@@ -286,7 +315,7 @@ body {
     margin-bottom: 20px;
 }
 
-.progress-container h1 {
+.progress-container h2 {
     display: block;
     width: 60%;
     font-size: 40px;
