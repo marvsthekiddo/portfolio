@@ -208,7 +208,7 @@ body {
 /* Column 1 paragraph styles */
 .column-1_minimize-width p {
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 200;
     color: var(--color-white);
 }
 
@@ -216,6 +216,7 @@ body {
 .inner-section__button {
     gap: 20px;
     display: flex;
+    margin-top: 50px;
 }
 
 /* ------------------------------------General button styles----------------------------------------- */
@@ -267,13 +268,8 @@ body {
 /* Scroll down button styles */
 .scroll-down__button {
     position: absolute;
-    right: 5%;
+    right: -15%;
     bottom: 5%;
-}
-
-/* COMING */
-.scroll-down__button:hover + .own-picture {
-    transform: translateY(-10px); /* Move the image up slightly */
 }
 
 .scroll-down__button img {
@@ -296,6 +292,13 @@ body {
     display: block;
     transition: transform 0.5s ease; /* Added transition property for transform */
 }
+
+/* Hover effect on the image when the button is hovered */
+.scroll-down__button:hover + .own-picture {
+    transition: transform 0.5s ease; 
+    opacity: 0.5;
+}
+
 
 /*-------------------------------Second Section----------------------------------------*/
 .about-me {
